@@ -9,5 +9,6 @@ The best part of the course are the video instruction and all the legwork that w
 ## Projects
 Speaking of projects, here is the list of projects from the course, along with links to my solutions.  In each directory, you'll find a README.md written by Udacity, along with some of their helper code.  Generally, the student's view of the project is the Jupyter Notebook files with an .ipynb extension (viewable in GitHub), which is where you'll find the string of guidance, activities, and Q&A that make up the project.  Sometimes, I had to fill in TODO sections in a separate code file.  Most of it is in Python, using primarily pandas and matplotlib.
 
-### Titanic Survival Exploration
+### [Titanic Survival Exploration](./titanic_survival_exploration)
 What a great opening project!  It's fun, easy to imagine and comes with lots of interesting data.  What's a budding data scientist not to love?  The goals, as the project progresses, are to 1) understand the data and 2) come up with a model to predict survival.  In the end, a score of 80% does the trick.
+
