@@ -38,5 +38,9 @@ Important concepts:
  - sensitivity:  in this case, predicting the price multiple times with the same model, but different training/test datasets and observing the range in prices
  - applicability:  judging how well your model might work on other data, considering the data that was used to train it and the type of model chosen
 
-
+### [Finding Donors for CharityML](./finding_donors)
+This project is more of the same, but with an interesting twist:  data preprocessing by the student!  The student is "hired" to produce a model for a fictitious charity using census data to find people who make over $50k (i.e. where to send solicitations for charity most effectively).
+ - data preprocessing
+ - setting a benchmark for model performance
+ - 
  
