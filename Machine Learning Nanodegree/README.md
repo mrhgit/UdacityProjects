@@ -39,8 +39,16 @@ Important concepts:
  - applicability:  judging how well your model might work on other data, considering the data that was used to train it and the type of model chosen
 
 ### [Finding Donors for CharityML](./finding_donors)
-This project is more of the same, but with an interesting twist:  data preprocessing by the student!  The student is "hired" to produce a model for a fictitious charity using census data to find people who make over $50k (i.e. where to send solicitations for charity most effectively).
+The student is "hired" to produce a model for a fictitious charity using census data to find people who make over $50k (i.e. where to send solicitations for charity most effectively).  This is the first project where "size matters."  That is, we have concerns about how much time training and predicting might take.  Also, the data preprocessing is performed by the student.
  - data preprocessing
+   - logarithmic transformation for skewed features:  this can help when dealing with outliers that are many orders of magnitude higher or lower than the average
+   - normalizing features:  this can be scaling and sometimes centering a feature to zero
+   - one-hot encoding categorical features - this works best when there's some dimensionality to the feature (e.g. "small", "medium", "large")
  - setting a benchmark for model performance
- - 
- 
+ - the F-Beta score:  ![F-Beta Score Equation](https://render.githubusercontent.com/render/math?math=F_%7B%5Cbeta%7D%20%3D%20%281%20%2B%20%5Cbeta%5E2%29%20%5Ccdot%20%5Cfrac%7Bprecision%20%5Ccdot%20recall%7D%7B%5Cleft%28%20%5Cbeta%5E2%20%5Ccdot%20precision%20%5Cright%29%20%2B%20recall%7D&mode=display)
+   - When beta==0.5, you have F<sub>0.5</sub> aka the F-score, which will emphasize precision.  This is easier to intuit from expression of this equation in terms Type I and Type II errors, as seen on the Wikipedia page for the [F1 score](https://en.wikipedia.org/wiki/F1_score)
+   - Precision is the ratio of true positive guesses to all positive guesses.  Recall is how many of the actual positives in the data were correctly identified as positive.  So you could always guess "positive" and have perfect Recall, but risk a low Precision.
+   - Why we may choose F-Beta score:  when we value Type I and Type II errors differently, we will want to weight them differently.  For an accuracy score, they are waited the same.
+ - (some of the) Supervised Learning Models available in sklearn (see the notebook for a list)
+ - Feature Importance Ranking - some alogrithsm (e.g. RandomForests) will allow you to get a ranked feature list based on importance to the algorithm
+ - Feature Selection - retraining with only the top N most important features
