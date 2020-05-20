@@ -71,3 +71,14 @@ In this project, the student is presented with a list of grocery purchase orders
      - Gaussian Mixture Model:  scale-invariant and consistent
      - silhouette coefficient:  how similar (up to 1)/dissimilar (down to -1) a given data point is from a given cluster.  The mean silhouette coefficient is used to score a clustering.
  - A/B testing
+
+### [Smart Cab](./smartcab)
+This project departs from datasets and features and enters into Reinforcement Learning.  No, not **Deep** Reinforcement Learning, just the regular type - Q-Learning, actually.  It also introduces the use of a simulator environment, a concept that's used heavily by Udacity in the Self-Driving Car and Flying Car Nanodegrees (those are rich, 3D worlds, whereas this project uses a super-basic 2D pygame realm).  Q-learning uses the known state and a list of ranked options to decide what to do.  How it ranks those options is based on experience - i.e. learning the "hard way," with rewards and punishments meted out by the simulation (critically, doing nothing is penalized).  That means there's an exploration-to-exploitation transition (and maybe back again) that occurs.  It's really cool to see the little cab start to get wise!  Note that the "gamma" factor used to include future values in the current reward/punishment tables is not used in this project (and can't be either, read the bottom of the ipynb notebook to see why).  If you'd like another pocket-sized example of reinforcement learning, you can look up people training the snake game on youtube.  Some good techniques:
+ - Tracking performance across iterations during training:
+   - Plotting average reward / action
+   - Plotting frequency of "bad" actions by type
+ - Defining and Sizing the State Space
+   - Analyzing average length of runs and using that to determine if there's enough time to cover the state space
+ - Analyzing the Policy Table
+   - can see the current state of rewards and decide if more training is needed
+   - identifying which ones are suboptimal (if possible)
