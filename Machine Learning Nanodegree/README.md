@@ -64,7 +64,7 @@ In this project, the student is presented with a list of grocery purchase orders
  - Dimensionality Reduction:  by using an explained variance ratio, we can trim features that are far less important than others, thereby simplifying the analysis.
  - Biplot - projects an N-dimensional set of features onto a two-dimensional graph
  - Unsupervised Learning
-   - Principal Component Analysis: as state above, systematically identify dimensions of maximum variance
+   - Principal Component Analysis: as described above, systematically identify dimensions of maximum variance
      - both forward and inverse!  we use inverse when it's time to convert a clustered mean back into the original units
    - Clustering
      - K-Means clustering:  richness and consistnet (not scale-invariant)
