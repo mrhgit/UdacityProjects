@@ -82,6 +82,3 @@ This project departs from datasets and features and enters into Reinforcement Le
  - Analyzing the Policy Table
    - can see the current state of rewards and decide if more training is needed
    - identifying which ones are suboptimal (if possible)
-
-### [Digit Recognition](./digit_recognition)
-If I recall correctly, Yann LeCun put Neural Networks back on the map with his use of them on the MNIST dataset, achieving a jump in record performance.  Digits are located in an image and identified using neural networks.
