@@ -82,3 +82,6 @@ This project departs from datasets and features and enters into Reinforcement Le
  - Analyzing the Policy Table
    - can see the current state of rewards and decide if more training is needed
    - identifying which ones are suboptimal (if possible)
+
+### [Capstone Project](./capstone.pdf)
+I won't repeat what's already in the report, but I should mention that this was still very early on on my neural network learning path.  We were allowed to choose our own projects and I wanted to do semantic segmentation.  I ended up somehow failing (I think?) to get good results with a U-net and mimicked a FCN approach that was presented in a couple papers that I reference in the bibliography.  It's likely they were a bit dated by the time I got my hands on them - a persistent problem in studying neural networks, perhaps!  A couple highlights are:  using PCA to try to help me design the first layer of my CNN and building my own Keras Atrous-CNN layer that I needed but was missing from the standard distribution (at the time, at least).
