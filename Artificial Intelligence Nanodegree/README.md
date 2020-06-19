@@ -24,3 +24,21 @@ The sudoku solver project required me to solve a sudoku puzzle using a depth-fir
 4. If none of the candidates worked, return False so the recursion can continue
 
 It was a fun project with lots of pythonic one-liners.  I might have gone a bit heavy on them, but they just look so good.
+
+### [Planning and Search](./AIND-Planning)
+This project required two products:  a [research paper](./AIND-Planning/research_review.pdf) that briefly covered the history of three planning and/or search algorithms and a [report](./AIND-Planning/heuristic_analysis.pdf) on the work done to solve three planning problems.  The planning problems involved moving N pieces of cargo from their starting airports to their destination airports with M planes at their own starting airports in as few flights as possible.
+
+Many different algorithms were used (as mentioned in the report):
+* Non-heuristic
+    * breadth-first tree search
+    * depth-first graph search
+    * breadth-first search
+    * depth-limited search
+    * uniform cost search
+* Heuristic
+    * greedy best first graph search
+    * recursive best first search with h1
+    * a-star search with three different heuristics:
+        * h1
+        * ignore preconditions
+        * planning graph level sum
