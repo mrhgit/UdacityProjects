@@ -43,4 +43,4 @@ Many different algorithms were used (as mentioned in the report):
         * ignore preconditions
         * planning graph level sum
 
-The report includes descriptions of these, as well as graphs of their relative performances!
+The report includes descriptions of these, as well as graphs and analysis of their relative performances.
