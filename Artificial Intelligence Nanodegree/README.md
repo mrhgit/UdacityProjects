@@ -10,5 +10,17 @@ An important note is that many of the projects in the AIND were automatically gr
 Below is the list of projects from the course, along with links to my solutions.  In each directory, you'll find a README.md written by Udacity, along with some of their helper code.  Generally, the student's view of the project is the Jupyter Notebook files with an .ipynb extension (viewable in GitHub), which is where you'll find the string of guidance, activities, and Q&A that make up the project.  Sometimes, I had to fill in TODO sections in a separate code file.
 
 ### [Sudoku Solver](./Sudoku)
-xxx
-    
+The sudoku solver project required me to solve a sudoku puzzle using a depth-first, recursive search:
+
+0. Given a grid state,
+1. Simplify (repeat until no change occurs)
+  a. Look for "naked twins," which involves finding two peer tiles with matching pairs of candidate values and then proceeding to remove those candidate values from peers of either tile (not including the original peer).
+  b. Look for tiles with only one candidate and remove that candidate from peer tiles.
+  c. Assign single candidates as true solutions
+2. If no unsolved tiles remain, return the complete puzzle
+3. Loop over the candidates of the tile with the least candidate values
+  a. set the value in the grid and recursively re-enter step 0.
+  b. if the result is False, continue, otherwise it's a complete puzzle - return it
+4. If none of the candidates worked, return False so the recursion can continue
+
+It was a fun project with lots of pythonic one-liners.  I might have gone a bit heavy on them, but they just look so good.
