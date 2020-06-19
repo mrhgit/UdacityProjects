@@ -25,8 +25,8 @@ The sudoku solver project required me to solve a sudoku puzzle using a depth-fir
 
 It was a fun project with lots of pythonic one-liners.  I might have gone a bit heavy on them, but they just look so good.
 
-### [Planning and Search](./AIND-Planning)
-This project required two products:  a [research paper](./AIND-Planning/research_review.pdf) that briefly covered the history of three planning and/or search algorithms and a [report](./AIND-Planning/heuristic_analysis.pdf) on the work done to solve three planning problems.  The planning problems involved moving N pieces of cargo from their starting airports to their destination airports with M planes at their own starting airports in as few flights as possible.
+### [Planning and Search](./Planning)
+This project required two products:  a [research paper](./Planning/research_review.pdf) that briefly covered the history of three planning and/or search algorithms and a [report](./Planning/heuristic_analysis.pdf) on the work done to solve three planning problems.  The planning problems involved moving N pieces of cargo from their starting airports to their destination airports with M planes at their own starting airports in as few flights as possible.
 
 Many different algorithms were used (as mentioned in the report):
 * Non-heuristic
