@@ -14,13 +14,13 @@ The sudoku solver project required me to solve a sudoku puzzle using a depth-fir
 
 0. Given a grid state,
 1. Simplify (repeat until no change occurs)
-  - Look for "naked twins," which involves finding two peer tiles with matching pairs of candidate values and then proceeding to remove those candidate values from peers of either tile (not including the original peer).
-  - Look for tiles with only one candidate and remove that candidate from peer tiles.
-  - Assign single candidates as true solutions
+    - Look for "naked twins," which involves finding two peer tiles with matching pairs of candidate values and then proceeding to remove those candidate values from peers of either tile (not including the original peer).
+    - Look for tiles with only one candidate and remove that candidate from peer tiles.
+    - Assign single candidates as true solutions
 2. If no unsolved tiles remain, return the complete puzzle
 3. Loop over the candidates of the tile with the least candidate values
-  - set the value in the grid and recursively re-enter step 0.
-  - if the result is False, continue, otherwise it's a complete puzzle - return it
+    - set the value in the grid and recursively re-enter step 0.
+    - if the result is False, continue, otherwise it's a complete puzzle - return it
 4. If none of the candidates worked, return False so the recursion can continue
 
 It was a fun project with lots of pythonic one-liners.  I might have gone a bit heavy on them, but they just look so good.
