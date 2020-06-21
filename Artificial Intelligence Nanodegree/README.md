@@ -51,6 +51,8 @@ This project also required two products:  a [research paper](./Isolation/researc
 This was a foray into alpha-beta pruning, which is a systematic branching technique used to evaluate the possible maximum and minimum rewards of making a specific move, given a game state.  An interesting twist was that there was a time cutoff, which was addressed in this project by progressively searching all options deeper iteratively.  This is a brute-force technique and in games where the number of moves is very high, it's important to prioritize which moves you should investigate and be able to estimate the consequential rewards quickly.  The paper explains how Google mangaged to build Alpha Go so it could use neural networks to perform the move prioritization and reward estimation in order to win at the game of Go.
 
 ### [Dog Breed Classifier](./dog-project)
+[Jupyter Notebook](./dog-project/dog_app.ipynb)
+
 In this project, images are fed to a dog breed classifier based on a neural network.  Actually, there are two stages of classification:  is it a human, a dog, or something else?  If it's a human or a dog, then determine the closest dog breed that resembles the subject in the photo.  The way in which it completes the preliminary dog/human/??? step is first trying to detect a dog using the ResNet50 model included with Keras.  If that fails, it attempts to detect a human using the Haar frontal-face detection cascade classifier.  If that fails, it prints a message saying it's stumped.  
 
 Used in the project:
