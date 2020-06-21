@@ -44,3 +44,8 @@ Many different algorithms were used (as mentioned in the report):
         * planning graph level sum
 
 The report includes descriptions of these, as well as graphs and analysis of their relative performances.
+
+### [The Game of Isolation](./Isolation)
+This project also required two products:  a [research paper](./Isolation/research_review.pdf) that reviewed a technical article in artificial intelligence and a [report](./Isolation/heuristic_analysis.pdf) on the results of an algorithmic competition in the game of Isolation.
+
+This was a foray into alpha-beta pruning, which is a systematic branching technique used to evaluate the possible maximum and minimum rewards of making a specific move, given a game state.  An interesting twist was that there was a time cutoff, which was addressed in this project by progressively searching all options deeper iteratively.  This is a brute-force technique and in games where the number of moves is very high, it's important to prioritize which moves you should investigate and be able to estimate the consequential rewards quickly.  The paper explains how Google mangaged to build Alpha Go so it could use neural networks to perform the move prioritization and reward estimation in order to win at the game of Go.
