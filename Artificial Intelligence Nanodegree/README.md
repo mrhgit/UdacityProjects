@@ -66,5 +66,6 @@ Used in the project:
 ### [RNN Text Generation](./RNN)
 [Jupyter Notebook](./RNN/RNN_project.ipynb)
 
-This project was a very light introduction to RNNs.  If I recall correctly, in the classroom we were predicting stock prices, which was a very straight-forward concept, because it dealt with numbers.  Converting into the realm of text seemed daunting at first, until it was taught that you simply represent each letter with a corresponding number.  It's amazing what can be commoditized as a number and how effectively RNNs can be used.  Because these networks were "light" and because the training text was fairly short, the results are more amusing than awesome.  See some of the example outputs [here](./RNN/text_gen_output/RNN_large_textdata_output.txt).
+This project was a very light introduction to Recursive Neural Networks (RNNs) - not to worry, though because more advanced projects would be forthcoming.  If I recall correctly, in the classroom we were predicting stock prices, which was a very straight-forward concept, because it dealt with numbers.  Converting into the realm of text seemed daunting at first, until it was taught that you simply represent each letter with a corresponding number.  It's amazing what can be commoditized as a number and how effectively RNNs can be used.  Because these networks were "light" and because the training text was fairly short, the results are more amusing than awesome.  See some of the example outputs [here](./RNN/text_gen_output/RNN_large_textdata_output.txt).
 
+### [NLP Capstone - RNN Translator](./NLP-Capstone)
