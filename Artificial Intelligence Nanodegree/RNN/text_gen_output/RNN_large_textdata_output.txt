@@ -1,0 +1,25 @@
+-------------------
+input chars = 
+er, of dubious and questionable memory. i had seen little of holmes lately. my marriage had drifted "
+predicted chars = 
+the companion of the corners.  it is a shall care the door of the corners.  i have not of the manter"
+-------------------
+input chars = 
+f the singular tragedy of the atkinson brothers at trincomalee, and finally of the mission which he "
+predicted chars = 
+had been the door of the corners.  i have not of the manter and the continged the corners.  the cort"
+-------------------
+input chars = 
+ands clasped behind him. to me, who knew his every mood and habit, his attitude and manner told thei"
+predicted chars = 
+r sanest the state the could componted the corners.  the corting as the same the corners of the bett"
+-------------------
+input chars = 
+uce it. how do i know that you have been getting yourself very wet lately, and that you have a most "
+predicted chars = 
+comented the cormention. the care the cornors of the corners.  the coment of the corners of the corn"
+-------------------
+input chars = 
+ou had a particularly malignant boot slitting specimen of the london slavey. as to your practice, if"
+predicted chars = 
+ i can that i have not deen the cornersoon that the comparion of the corners.  the corness of the co"
