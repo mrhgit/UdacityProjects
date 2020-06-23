@@ -66,6 +66,27 @@ Used in the project:
 ### [RNN Text Generation](./RNN)
 [Jupyter Notebook](./RNN/RNN_project.ipynb)
 
-This project was a very light introduction to Recursive Neural Networks (RNNs) - not to worry, though because more advanced projects would be forthcoming.  If I recall correctly, in the classroom we were predicting stock prices, which was a very straight-forward concept, because it dealt with numbers.  Converting into the realm of text seemed daunting at first, until it was taught that you simply represent each letter with a corresponding number.  It's amazing what can be commoditized as a number and how effectively RNNs can be used.  Because these networks were "light" and because the training text was fairly short, the results are more amusing than awesome.  See some of the example outputs [here](./RNN/text_gen_output/RNN_large_textdata_output.txt).
+This project was a very light introduction to Recursive Neural Networks (RNNs) - not to worry, though because more advanced projects would be forthcoming.  From having a signal processing background, I consider "regular" Neural Networks as analogous to Finite Impulse Response (FIR) Filters and Recurrent Neural Networks as analogous to Infinite Impulse Response (IIR) Filters, because the output becomes part of the input in IIRs.  If I recall correctly, in the classroom we were predicting stock prices, which was a very straight-forward concept, because it dealt with numbers.  Converting into the realm of text seemed daunting at first, until it was taught that you simply represent each letter with a corresponding number.  It's amazing what can be commoditized as a number and how effectively RNNs can be used.  Because these networks were "light" and because the training text was fairly short, the results are more amusing than awesome.  See some of the example outputs [here](./RNN/text_gen_output/RNN_large_textdata_output.txt).
 
 ### [NLP Capstone - RNN Translator](./NLP-Capstone)
+
+Just like in the RNN Text Generation project, we'll be using language with RNNs (Natural Language Processing, NLP).  The goal this time is to perform word translation.  As you translate across different languages, there is a need to go beyond literal translation, as some words may appear in a different order in other languages, and some words (especially verbs) may be composed of two words instead of one (among other, similar issues).  In this case, there will be translation between English and French.  Instead of tokenizing letters (as in RNN Text Generation), entire words will be tokenized.  The dataset is composed of text files with corresponding sentences.  The vocabularies are limited to 227 unique English words and 355 unique French words.  The training and test sentences are preprocessed using the steps shown below.  The padding is adding a sequence of zeros at the end of any sentence shorter than the longest sequence length.  Word embedding is used in some cases, which improves the representation of words from a more-or-less randomly assigned ID to having a vector representation where "similar" words are clustered - think "once" and "twice" being closer than "your" and "our".
+
+Concepts shown in the [Jupyter Notebook](./NLP-Capstone/machine_translation.ipynb):
+* Preprocessing
+    * Tokenization
+        * Removing punctuation
+        * Converting all to lower-case
+        * Splitting sentences into words
+        * Replacing each word with its numerical id
+    * Embedding
+    * Padding
+* RNN Implementations
+    * Simple RNN
+    * Long-/Short- Term Memory (LSTM) RNN
+    * Gated Recurrent Unit (GRU) RNN
+    * Bidirectional RNN
+    * Encoding-Decoder Models (think U-Net)
+    * RNN Modifications:
+        * Adding an Embedding Layer
+        * Adding a Time Distributed Layer
