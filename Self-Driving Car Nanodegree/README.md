@@ -11,7 +11,8 @@ Below is the list of projects from the course, along with links to my solutions.
 ### [LeNet](./LeNet-Lab)
 [Jupyter Notebook](./LeNet-Lab/LeNet-Lab-Solution.ipynb)
 
-As I stated, topics are reintroduced in various nanodegrees.  In the Artificial Intelligence Nanodegree, Keras was used when dealing with neural networks, however "raw" TensorFlow is used in the Self-Driving Car Nanodegree.  This project introduces the LeNet architecture - one of the first forays of Neural Networks that shocked the world.  This neural network designed by Yan LeCun is famous for excelling at the MNIST challenge, outperforming all other solutions by a wide margin.  In this project, the LeNet-5 architecture is built (see the README.md for a diagram).
+As I stated, topics are reintroduced in various nanodegrees.  In the Artificial Intelligence Nanodegree, Keras was used when dealing with neural networks, however "raw" TensorFlow is used in the Self-Driving Car Nanodegree.  This project introduces the LeNet architecture - one of the first forays of Neural Networks that shocked the world.  This neural network designed by Yan LeCun is famous for excelling at the MNIST challenge, outperforming all other solutions by a wide margin.  In this project, the LeNet-5 architecture is built.
+![LeNet-5 Architecture](LeNet-Lab/lenet.png)
 
 ### [AlexNet Feature Extraction](./)
 ### [Transfer Learning](./)
