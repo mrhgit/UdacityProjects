@@ -15,6 +15,11 @@ As I stated, topics are reintroduced in various nanodegrees.  In the Artificial 
 ![LeNet-5 Architecture](LeNet-Lab/lenet.png)
 
 ### [Lab: AlexNet Feature Extraction](./AlexNet-Feature-Extraction)
+[Feature Extraction Python Script](./AlexNet-Feature-Extraction/feature_extraction_solution.py)
+[Training Python Script](./AlexNet-Feature-Extraction/train_feature_extraction_solution.py)
+[Traffic Sign Inference Python Script](./AlexNet-Feature-Extraction/traffic_sign_inference_solution.py)
+
+This lab appears to be missing both an extensive Readme.md and any sort of Jupyter Notebook, so I've linked to the python solutions involved instead.  The job here is similar to the dog classifier project in the AIND - use a trained model that's been proven to do a similar task, optionally take the first half of the network (including weights) and tack on new, appropriate layers, and retrain it to classify a different set of classes.  In this example, we'll be taking [AlexNet](https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html), which is meant to work with the [ImageNet](https://qz.com/1034972/the-data-that-changed-the-direction-of-ai-research-and-possibly-the-world/) dataset, and using it to classify traffic signs.
 
 ### [Transfer Learning](./)
 ### [Traffic Sign Classifier](./)
