@@ -8,7 +8,11 @@ The Self-Driving Car Nanodegree offered by Udacity in 2017/2018 was one of their
 Below is the list of projects from the course, along with links to my solutions.  In each directory, you'll find a README.md written by Udacity, along with some of their helper code.  Generally, the student's view of the project is the Jupyter Notebook files with an .ipynb extension (viewable in GitHub), which is where you'll find the string of guidance, activities, and Q&A that make up the project.  Sometimes, I had to fill in TODO sections in a separate code file.
 
 ## Term 1
-### [LeNet](./)
+### [LeNet](./LeNet-Lab)
+[Jupyter Notebook](./LeNet-Lab/LeNet-Lab-Solution.ipynb)
+
+As I stated, topics are reintroduced in various nanodegrees.  In the Artificial Intelligence Nanodegree, Keras was used when dealing with neural networks, however "raw" TensorFlow is used in the Self-Driving Car Nanodegree.  This project introduces the LeNet architecture - one of the first forays of Neural Networks that shocked the world.  This neural network designed by Yan LeCun is famous for excelling at the MNIST challenge, outperforming all other solutions by a wide margin.  In this project, the LeNet-5 architecture is built (see the README.md for a diagram).
+
 ### [AlexNet Feature Extraction](./)
 ### [Transfer Learning](./)
 ### [Traffic Sign Classifier](./)
