@@ -58,11 +58,13 @@ Topics:
 
 [Report](./Behavioral-Cloning/writeup_report.pdf)
 
-![Stand Out Task (MP4 VIDEO)](./Behavioral-Cloning/video_mountain_right_lane_only.mp4)
+[Stand Out Task (MP4 VIDEO)](./Behavioral-Cloning/video_mountain_right_lane_only.mp4)
+![Mountain Pass](./Behavioral-Cloning/images/mountain_pass.png)
 
-![Basic Pass (MP4 VIDEO)](./Behavioral-Cloning/video.mp4)
+[Basic Pass (MP4 VIDEO)](./Behavioral-Cloning/video.mp4)
+![Flat Loop](./Behavioral-Cloning/images/flat_loop.png)
 
-I started to get a bit cocky at this point, due to how powerful I was finding these neural networks to be, especially on this task.  The task was to drive a car in a simulator around a track manually, recording steering angles and screenshots as you went, then use that saved data to train a neural network to steer based on screenshots.  The required "mph" for the basic run was 9mph.  Additionally, there was a "stand-out" task of a mountain course, which I not only got to run, but got to run at 20mph.... and kept the car in the right lane (ok, most of the time)!
+I started to get a bit cocky at this point, due to how powerful I was finding these neural networks to be, especially on this task.  The task was to drive a car in a simulator around a track manually, recording steering angles and screenshots as you went, then use that saved data to train a neural network to steer based on screenshots.  The required "mph" for the basic run was 9mph.  Additionally, there was a "stand-out" task of a mountain course, which I not only got to run, but got to run at 20mph.... and kept the car in the right lane (ok, most of the time)!  A fun part of this project was hooking up my Xbox 360 controller to the PC to avoid having to use a keyboard to keep the car between the lines.
 
 Topics:
 * Preprocessing
