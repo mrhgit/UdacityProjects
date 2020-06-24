@@ -67,8 +67,32 @@ Topics:
 * Neural Network Design
    * Dropout Layers
 
-### [Lane Lines](./)
-### [Advanced Lane Lines](./)
+### [Lane Lines](./Lane-Lines)
+
+[Jupyter Notebook](./Lane-Lines/P1.ipynb)
+
+[Report](./Lane-Lines/report.pdf)
+
+[Video 1](./Lane-Lines/solidWhiteRight.mp4)
+
+[Video 2](./Lane-Lines/solidYellowLeft.mp4)
+
+[Challenge Video](./Lane-Lines/challenge.mp4)
+
+This project using OpenCV operations to detect lane lines in images.  As mentioned in the [report](./Lane-Lines/report.pdf), the first step is Canny Edge Detection, which is followed by probabilistic Hough transform.  A region of interest is also enforced, which helps avoid detecting edges in traffic signs and the like.  At this point, equations for the lines are derived and lines are overlayed on to the original image as a feedback mechanism.
+
+### [Advanced Lane Lines](./Advanced-Lane-Lines)
+
+[Jupyter Notebook](./Advanced-Lane-Lines/Advanced_Lane_Finding_Final.ipynb)
+
+[Report](./Advanced-Lane-Lines/report.pdf)
+
+[Video 1](./Advanced-Lane-Lines/project_video_out.mp4)
+
+[Challenge Video](./Advanced-Lane-Lines/challenge_video_out.mp4)
+
+This lane finder project incorporates camera lens distortion correction, colorspace conversion and thresholding, (coolest of all) perspective transformation, curvature calculation, overlaying lines and finally perspective transformation reversal.  Important takeaways are that thresholding can be extremely temperamental and so can curvature parameters made in an expanded space where errors may be magnified.  In the report, I indicate that the challenge video was a failure, but looking at it now I see that the performance is pretty good (although not perfect).
+
 ### [Vehicle Detection](./)
 
 ## Term 2
