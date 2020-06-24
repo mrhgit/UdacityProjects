@@ -32,7 +32,7 @@ A similar lab was done using the Inception, ResNet and VGG networks.
 
 [Report](./Traffic-Sign-Classifier/report.pdf)
 
-I'll let the [report](./Traffic-Sign-Classifier/report.pdf) do most of the talking about this one.  In general, the purpose of this project is to identify European traffic signs using a Convolutional Neural Network (CNN).  The project incorporates transfer learning and also feature extraction and visualization, which aides the designer by giving some feedback about what the neural network is attempting to identify in the images.
+A training accuracy of 99% and a test accuracy of 97.4%?  Pretty good!  I'll let the [report](./Traffic-Sign-Classifier/report.pdf) do most of the talking about this one.  In general, the purpose of this project was to identify European traffic signs using a Convolutional Neural Network (CNN).  The project uses a modified LeNet CNN trained from scratch.  Skip Layers were used to improve accuracy.  Feature extraction and visualization were incorporated to give some feedback about what the neural network is attempting to identify in the images.
 
 Topics:
 * Preprocessing
@@ -44,11 +44,28 @@ Topics:
     * Obfuscation
     * Shifting
     * Rotating
-* Neural Network design
+* Neural Network Design
     * Layer skipping
     * Feature Map Visualization
 
-### [Behavior Cloning](./)
+### [Behavior Cloning](./Behavior-Cloning)
+[Jupyter Notebook](./Behavior-Cloning)
+
+[Report](./Behavior-Cloning/writeup_report.pdf)
+
+![Basic Pass (Video)](./Behavior-Cloning/video.mp4)
+![Stand Out Task (Video)](./Behavior-Cloning/video_mountain_right_lane_only.mp4)
+
+I started to get a bit cocky at this point, due to how powerful I was finding these neural networks to be, especially on this task.  The task was to drive a car in a simulator around a track manually, recording steering angles and screenshots as you went, then use that saved data to train a neural network to steer based on screenshots.  The required "mph" for the basic run was 9mph.  Additionally, there was a "stand-out" task of a mountain course, which I not only got to run, but got to run at 20mph.... and kept the car in the right lane (ok, most of the time)!
+
+Topics:
+* Preprocessing
+    * Performing PreProc on the GPU
+    * Clipping
+    * Normalization
+* Neural Network Design
+   * Dropout Layers
+
 ### [Lane Lines](./)
 ### [Advanced Lane Lines](./)
 ### [Vehicle Detection](./)
