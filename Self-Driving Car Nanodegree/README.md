@@ -48,14 +48,14 @@ Topics:
     * Layer skipping
     * Feature Map Visualization
 
-### [Behavioral Cloning](./Behavior-Cloning)
-[Jupyter Notebook](./Behavior-Cloning)
+### [Behavioral Cloning](./Behavioral-Cloning)
+[Jupyter Notebook](./Behavioral-Cloning)
 
-[Report](./Behavior-Cloning/writeup_report.pdf)
+[Report](./Behavioral-Cloning/writeup_report.pdf)
 
-![Stand Out Task (MP4 VIDEO)](./Behavior-Cloning/video_mountain_right_lane_only.mp4)
+![Stand Out Task (MP4 VIDEO)](./Behavioral-Cloning/video_mountain_right_lane_only.mp4)
 
-![Basic Pass (MP4 VIDEO)](./Behavior-Cloning/video.mp4)
+![Basic Pass (MP4 VIDEO)](./Behavioral-Cloning/video.mp4)
 
 I started to get a bit cocky at this point, due to how powerful I was finding these neural networks to be, especially on this task.  The task was to drive a car in a simulator around a track manually, recording steering angles and screenshots as you went, then use that saved data to train a neural network to steer based on screenshots.  The required "mph" for the basic run was 9mph.  Additionally, there was a "stand-out" task of a mountain course, which I not only got to run, but got to run at 20mph.... and kept the car in the right lane (ok, most of the time)!
 
