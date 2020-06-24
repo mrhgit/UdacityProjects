@@ -48,7 +48,7 @@ Topics:
     * Layer skipping
     * Feature Map Visualization
 
-### [Behavior Cloning](./Behavior-Cloning)
+### [Behavioral Cloning](./Behavior-Cloning)
 [Jupyter Notebook](./Behavior-Cloning)
 
 [Report](./Behavior-Cloning/writeup_report.pdf)
