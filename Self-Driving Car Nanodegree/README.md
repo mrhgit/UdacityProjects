@@ -30,9 +30,9 @@ A similar lab was done using the Inception, ResNet and VGG networks.
 
 [Jupyter Notebook](./Traffic-Sign-Classifier/Traffic_Sign_Classifier.ipynb)
 
-[Report](./Traffic_Sign_Classifier/report.pdf)
+[Report](./Traffic-Sign-Classifier/report.pdf)
 
-I'll let the [report](./Traffic_Sign_Classifier/report.pdf) do most of the talking about this one.  In general, the purpose of this project is to identify European traffic signs using a Convolutional Neural Network (CNN).  The project incorporates transfer learning and also feature extraction and visualization, which aides the designer by giving some feedback about what the neural network is attempting to identify in the images.
+I'll let the [report](./Traffic-Sign-Classifier/report.pdf) do most of the talking about this one.  In general, the purpose of this project is to identify European traffic signs using a Convolutional Neural Network (CNN).  The project incorporates transfer learning and also feature extraction and visualization, which aides the designer by giving some feedback about what the neural network is attempting to identify in the images.
 
 Topics:
 * Preprocessing
