@@ -117,13 +117,13 @@ The project starts off by training an SVM classifier on the Histogram of Oriente
 
 ## Term 2
 ### Some Kalman Filter Notes
-Kalman Filter - the General Idea
+#### Kalman Filter - the General Idea
 
-Extended Kalman Filter
+#### Extended Kalman Filter
 
-Unscented Kalman Filter
+#### Unscented Kalman Filter
 
-Predicting Mean and Covariance
+#### Predicting Mean and Covariance
 
 ### [Extended Kalman Filter](./)
 ### [Unscented Kalman Filter](./)
