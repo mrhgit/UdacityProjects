@@ -49,7 +49,7 @@ Topics:
     * Feature Map Visualization
 
 ### [Behavioral Cloning](./Behavioral-Cloning)
-[Jupyter Notebook](./Behavioral-Cloning)
+[Jupyter Notebook](./Behavioral-Cloning/Behavioral_Cloning_Final.ipynb)
 
 [Report](./Behavioral-Cloning/writeup_report.pdf)
 
