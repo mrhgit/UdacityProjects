@@ -99,6 +99,7 @@ This project using OpenCV operations to detect lane lines in images.  As mention
 
 [Challenge Video](./Advanced-Lane-Lines/challenge_video_out.mp4)
 
+<img src="./Advanced-Lane-Lines/output_images/debug7.png" alt="drawing" width="640"/>
 ![Debug Snapshot](./Advanced-Lane-Lines/output_images/debug7.png =640x360)
 ![Overlayed Snapshot](./Advanced-Lane-Lines/output_images/outimg7.png =640x360)
 
