@@ -33,6 +33,8 @@ A similar lab was done using the Inception, ResNet and VGG networks.
 [Report](./Traffic-Sign-Classifier/report.pdf)
 
 ![Classification 1](./Traffic-Sign-Classifier/output_images/classification_1.png)
+![Classification 2](./Traffic-Sign-Classifier/output_images/classification_2.png)
+![Classification 3](./Traffic-Sign-Classifier/output_images/classification_3.png)
 
 
 A training accuracy of 99% and a test accuracy of 97.4%?  Pretty good!  I'll let the [report](./Traffic-Sign-Classifier/report.pdf) do most of the talking about this one.  In general, the purpose of this project was to identify European traffic signs using a Convolutional Neural Network (CNN).  The project uses a modified LeNet CNN trained from scratch.  Skip Layers were used to improve accuracy.  Feature extraction and visualization were incorporated to give some feedback about what the neural network is attempting to identify in the images.
