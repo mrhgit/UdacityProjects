@@ -123,11 +123,15 @@ The next two projects (Extended Kalman Filter, EKF and Unscented Kalman Filter, 
 #### Kalman Filter - the General Idea
 The general idea behind the Kalman filter is a recognition of noisy measurements and noisy processes - more specifically, it's the combination of multiple, noisy measurements to improve the overall measurement accuracy.
 
-When we are adding two noisy values, we get the following equation:
+When we are adding two noisy values, we get the following equations:
+
 ![adding_two_noisy_values](./Kalman-Filters/adding_two_noisy_values.png)
 
+The new mean and variance are simply the result of adding the values.  This is distinct from *combining* values, which is what the Kalman filter is based on. 
 
-When we have two direct, noisy measurements of the same value:
+When we have two direct, noisy measurements of the same value, we can combine them with these equations:
+
+![combining_two_noisy_values](./Kalman-Filters/combining_two_noisy_values.png)
 
 
 #### Extended Kalman Filter
