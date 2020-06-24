@@ -93,7 +93,15 @@ This project using OpenCV operations to detect lane lines in images.  As mention
 
 This lane finder project incorporates camera lens distortion correction, colorspace conversion and thresholding, (coolest of all) perspective transformation, curvature calculation, overlaying lines and finally perspective transformation reversal.  Important takeaways are that thresholding can be extremely temperamental and so can curvature parameters made in an expanded space where errors may be magnified.  In the report, I indicate that the challenge video was a failure, but looking at it now I see that the performance is pretty good (although not perfect).
 
-### [Vehicle Detection](./)
+### [Vehicle Detection](./Vehicle-Detection)
+
+[Jupyter Notebook](./Vehicle-Detection/Vehicle_Detection_v1.ipynb)
+
+[Report](./Vehicle-Detection/report.pdf)
+
+[Video](./Vehicle-Detection/project_video_out.mp4)
+
+The project starts off by training an SVM classifier on the Histogram of Oriented Gradients (HOG) features calculated from a dataset of images of rear views of cars and not-cars.  This means we now have something that, given a 64x64 image, can fairly quickly/cheaply tell us whether or not a car is in the image.  In order to leverage this classifiers, windows of various sizes are slid around the car camera image.  The windowed sample is converted to 64x64 and a car detection is performed.  Because the results can be noisy, heatmapping is used to overlay multiple, consistent detections, and a threshold is used to trigger an "overall" detection.  The report has some good discussion about the tradeoffs involved and possible improvements.
 
 ## Term 2
 ### [Unscented Kalman Filter](./)
