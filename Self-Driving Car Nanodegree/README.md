@@ -116,8 +116,8 @@ This lane finder project incorporates camera lens distortion correction, colorsp
 The project starts off by training an SVM classifier on the Histogram of Oriented Gradients (HOG) features calculated from a dataset of images of rear views of cars and not-cars.  This means we now have something that, given a 64x64 image, can fairly quickly/cheaply tell us whether or not a car is in the image.  In order to leverage this classifiers, windows of various sizes are slid around the car camera image.  The windowed sample is converted to 64x64 and a car detection is performed.  Because the results can be noisy, heatmapping is used to overlay multiple, consistent detections, and a threshold is used to trigger an "overall" detection.  The report has some good discussion about the tradeoffs involved and possible improvements.
 
 ## Term 2
-### [Unscented Kalman Filter](./)
 ### [Extended Kalman Filter](./)
+### [Unscented Kalman Filter](./)
 ### [Model Predictive Control](./)
 ### [PID Controller](./)
 ### [Kidnapped Vehicle Project](./)
