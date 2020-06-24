@@ -99,9 +99,7 @@ This project using OpenCV operations to detect lane lines in images.  As mention
 
 [Challenge Video](./Advanced-Lane-Lines/challenge_video_out.mp4)
 
-<img src="./Advanced-Lane-Lines/output_images/debug7.png" alt="drawing" width="640"/>
-![Debug Snapshot](./Advanced-Lane-Lines/output_images/debug7.png =640x360)
-![Overlayed Snapshot](./Advanced-Lane-Lines/output_images/outimg7.png =640x360)
+<img src="./Advanced-Lane-Lines/output_images/debug7.png" alt="Debug Snapshot" width="400"/> <img src="./Advanced-Lane-Lines/output_images/outimg7.png" alt="Overlayed Snapshot" width="400"/>
 
 This lane finder project incorporates camera lens distortion correction, colorspace conversion and thresholding, (coolest of all) perspective transformation, curvature calculation, overlaying lines and finally perspective transformation reversal.  Important takeaways are that thresholding can be extremely temperamental and so can curvature parameters made in an expanded space where errors may be magnified.  In the report, I indicate that the challenge video was a failure, but looking at it now I see that the performance is pretty good (although not perfect).
 
