@@ -85,6 +85,7 @@ Topics:
 [Video 2](./Lane-Lines/solidYellowLeft.mp4)
 
 [Challenge Video](./Lane-Lines/challenge.mp4)
+![Challenge Screenshot](./Lane-Lines/challenge.png)
 
 This project using OpenCV operations to detect lane lines in images.  As mentioned in the [report](./Lane-Lines/report.pdf), the first step is Canny Edge Detection, which is followed by probabilistic Hough transform.  A region of interest is also enforced, which helps avoid detecting edges in traffic signs and the like.  At this point, equations for the lines are derived and lines are overlayed on to the original image as a feedback mechanism.
 
