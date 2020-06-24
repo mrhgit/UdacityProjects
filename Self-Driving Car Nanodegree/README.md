@@ -116,8 +116,19 @@ This lane finder project incorporates camera lens distortion correction, colorsp
 The project starts off by training an SVM classifier on the Histogram of Oriented Gradients (HOG) features calculated from a dataset of images of rear views of cars and not-cars.  This means we now have something that, given a 64x64 image, can fairly quickly/cheaply tell us whether or not a car is in the image.  In order to leverage this classifiers, windows of various sizes are slid around the car camera image.  The windowed sample is converted to 64x64 and a car detection is performed.  Because the results can be noisy, heatmapping is used to overlay multiple, consistent detections, and a threshold is used to trigger an "overall" detection.  The report has some good discussion about the tradeoffs involved and possible improvements.
 
 ## Term 2
+
 ### Some Kalman Filter Notes
+The next two projects (Extended Kalman Filter, EKF and Unscented Kalman Filter, UKF) each deal with Kalman filters (obviously).  There were no reports and README.md's or Jupyter notebooks for those projects, just some C++ code.  As such, I'm including some general notes on Kalman filters here to convey some of the theory behind the projects.
+
 #### Kalman Filter - the General Idea
+The general idea behind the Kalman filter is a recognition of noisy measurements and noisy processes - more specifically, it's the combination of multiple, noisy measurements to improve the overall measurement accuracy.
+
+When we are adding two noisy values, we get the following equation:
+![adding_two_noisy_values](./Kalman-Filters/adding_two_noisy_values.png)
+
+
+When we have two direct, noisy measurements of the same value:
+
 
 #### Extended Kalman Filter
 
