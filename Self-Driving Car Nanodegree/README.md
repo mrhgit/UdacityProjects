@@ -21,8 +21,14 @@ As I stated, topics are reintroduced in various nanodegrees.  In the Artificial 
 
 This lab appears to be missing both an extensive Readme.md and any sort of Jupyter Notebook, so I've linked to the python solutions involved instead.  The job here is similar to the dog classifier project in the AIND - use a trained model that's been proven to do a similar task, take the first half of the network (including weights) and tack on new, appropriate layers, and retrain it to classify a different set of classes.  The first few layers may be frozen so that they don't change - this also speeds up the training.  In this example, we'll be taking [AlexNet](https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html), which is meant to work with the [ImageNet](https://qz.com/1034972/the-data-that-changed-the-direction-of-ai-research-and-possibly-the-world/) dataset, and using it to classify traffic signs.
 
-### [Lab: Transfer Learning](./)
-### [Traffic Sign Classifier](./)
+A similar lab was done using the Inception, ResNet and VGG networks.
+
+### [Traffic Sign Classifier](./Traffic-Sign-Classifier)
+[Jupyter Notebook](./Traffic-Sign-Classifier/Traffic_Sign_Classifier.ipynb)
+[Report](./Traffic_Sign_Classifier.ipynb/report.pdf)
+
+I'll let the [report](./Traffic_Sign_Classifier.ipynb/report.pdf) do most of the talking about this one.  In general, the purpose of this project is to identify European traffic signs using a Convolutional Neural Network (CNN).  The project incorporates transfer learning and also feature extraction and visualization, which aides the designer by giving some feedback about what the neural network is attempting to identify in the images.
+
 ### [Behavior Cloning](./)
 ### [Lane Lines](./)
 ### [Advanced Lane Lines](./)
