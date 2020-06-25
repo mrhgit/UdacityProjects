@@ -176,6 +176,8 @@ Particle filters can be used as a brute force style method of determining state.
 
 ### [Extended Kalman Filter](./Extended-Kalman-Filter)
 
+The [Eigen](https://eigen.tuxfamily.org/dox/GettingStarted.html) library was used for matrix operations.
+
 In this project, a car is driving around on a track in a figure-8 pattern.  Measurements are made using two devices at differing intervals.  The first device is a laser that measures range to a point of interest quite accurately.  The second device is a RADAR that measure three things simultaenously:  the range (using time of arrival), radial velocity (using the Doppler effect) and bearing (based on antenna position) to a point of interest.  The red dots in the image are the laser measurements and the blue dots are the radar measurements.  Even though the laser measurements are better than the radar measurements, by combining the two together, we get an even better estimate of the car's true position (the radial velocity and bearing are also used).
 
 
