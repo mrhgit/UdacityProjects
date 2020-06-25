@@ -219,5 +219,12 @@ Although not optimal (as mentioned in the report), I thought it would be more fu
 
 ![Changing Lanes](./Path-Planning/changing_lanes.png)
 
-### [Semantic Segmentation](./)
+### [Semantic Segmentation](./Semantic-Segmentation)
+
+[Report](./Semantic-Segmentation/report.pdf)
+
+In the Semantic Segmentation project, it's back to Neural Networks - specifically, the U-Net architecture, which is also known as a Fully Convolutional Network (FCN).  A network that is fully convolutional can run at a very high speed on GPU hardware.  The VGG network was taken as a base model and chopped off after the convolutional layers.  Additional layers were added back on to build back up to a layer size that matched the image input size so that the classification of each pixel as road/not-road could be overlayed onto it.  Skip layers are especially useful in U-Nets because of the network's need to redraw an image of the original size.  The main layers that form the U-Net perform an encoding/decoding process that plays on the strength of the neural network's ability to make considider many features in an image (and groups of features, and groups of groups of features, etc.).  The amount of data used for training was pretty small (289 images), so much of the output is a little messy.
+
+![Semantic Segmentation](./Semantic-Segmentation/semantic_segmentation.png)
+
 ### [Capstone](./)
