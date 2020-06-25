@@ -229,7 +229,7 @@ In the Semantic Segmentation project, it's back to Neural Networks - specificall
 
 ### [Capstone](./Capstone)
 
-The Capstone project centered around the use of the Robotic Operating System (ROS).  The ROS system allows for work to be divided very neatly, as it is basically an architecture that handles communication between modules.  Things like cameras can be running and supply images and other modules can subscribe and draw images from available ones as they like, for instance.  Reusability is as much a major part of ROS as modularization.  The point is to isolate functionality such that it can be shared (and borrowed) freely and easily.  This allows for extremely rapid development due to easing the burden of system integration.  This means that standardization is also key.
+The overall goal in the Capstone project was for a car to drive a loop around a track that contained traffic lights, with an approach centered around the use of the Robotic Operating System (ROS).  The ROS system allows for work to be divided very neatly, as it is basically an architecture that handles communication between modules.  Things like cameras can be running and supply images and other modules can subscribe and draw images from available ones as they like, for instance.  Reusability is as much a major part of ROS as modularization.  The point is to isolate functionality such that it can be shared (and borrowed) freely and easily.  This allows for extremely rapid development due to easing the burden of system integration.  This means that standardization is also key.  ROS nodes typically have a preamble, main loop and a shutdown procedure.
 
 The tasks of a self-driving car that are combined in this project are:
 * Sensors - lidar, radar, gps, cameras
@@ -237,4 +237,10 @@ The tasks of a self-driving car that are combined in this project are:
 * Planning - uses perception info for behavior planning as well as short and long range path planning
 * Control - ensures vehicle follows the path
 
-ROS nodes typically have a preamble, main loop and a shutdown procedure.
+In this project, the following nodes were used:
+* camera publisher - publishes images
+* traffic light detector - detects the color of traffic lights
+* waypoint loader - loads a map of known waypoints
+* waypoint updater - publishes desired waypoints for the car to follow, based on traffic lights and the known waypoints
+* twist controller - converts desired linear and angular velocities to throttle, brake and steer values
+* waypoint follower - a provided library that converts throttle, brake and steering into car control in the simulator
