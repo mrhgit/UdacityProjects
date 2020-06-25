@@ -1,0 +1,60 @@
+############################## SLR SIMPLECONFIG ############################
+# this is a comment. [X] is a namespace. [X:Y] initializes X from Y
+# Namespace and parameter names are not case-sensitive
+# X=Y sets X to Y. Y may be a string, float, or list of 3 floats
+############################################################################
+
+[QuadControlParams] 
+
+UseIdealEstimator=1
+
+# Physical properties
+# Mass [kg]
+Mass = 0.5
+# L [m]
+L = 0.17
+# I [kg*m^2]
+Ixx = 0.0023
+Iyy = 0.0023
+Izz = 0.0046
+# kappa [drag/thrust ratio = km/kf]
+kappa = 0.016
+# Thrust [N]
+minMotorThrust = .1
+maxMotorThrust = 4.5
+
+# Position control gains
+# kpPosXY = 1
+# kpPosZ = 1
+# KiPosZ = 20
+kpPosXY = 40
+kpPosZ = 45 #45
+KiPosZ = 30 # 40
+
+# Velocity control gains - should be 4x pos Kp's for a critically damped systme
+# kpVelXY = 4
+# kpVelZ = 4
+kpVelXY = 13
+kpVelZ = 30 #30
+
+# Angle control gains
+# kpBank = 5
+# kpYaw = 1
+kpBank = 17
+kpYaw = 2
+
+# Angle rate gains
+# kpPQR = 23, 23, 5
+# kpPQR = 20, 20, 15
+# kpPQR = 93, 53, 10
+# kpPQR = 94, 23, 15 # works with term1 = kappa / l
+# kpPQR = -1600  , 0, 0 # works with term1 = kappa / l
+# kpPQR = 65  , 0, 0 # works with term1 = 1 / l
+kpPQR = 65, 65, 8
+
+# limits
+maxAscentRate = 5
+maxDescentRate = 2
+maxSpeedXY = 5
+maxHorizAccel = 12
+maxTiltAngle = .7
