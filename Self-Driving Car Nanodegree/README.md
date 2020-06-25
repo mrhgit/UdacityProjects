@@ -164,6 +164,14 @@ When dealing with non-linear systems, the Extended Kalman filter is a method for
 
 #### Unscented Kalman Filter
 
+"Unscented" Kalman filters are so-named because they "don't stink."  The name is based out of the frustration in dealing with the insufficient performance of 1st-order Taylor series expansions to represent non-linear systems, as are used in the Extended Kalman Filter.  There's still a sacrifice that is made - how the noise is treated.  Despite uncertainty no longer being normally-distributed after a non-linear process, the UKF treats it as if it were.
+
+The UKF uses _sigma points_, because whereas it's difficult to transform the whole state distribution, it easy to transform single points.  The sigma points are chosen around the mean and are transformed.  Then the mean and covariance of output points can be calculated.  The same technique can be applied in linear cases, but the computational load is higher with the results being the same.
+
+The number of sigma points depends on the number of dimensions of state.  n(sigma) = 2 * n(state) + 1.  The extra 1 is the mean of the state and the two per state dimension are poinots of standard deviation along each dimension.
+
+#### Particle Filters
+
 #### Predicting Mean and Covariance
 
 ### [Extended Kalman Filter](./)
