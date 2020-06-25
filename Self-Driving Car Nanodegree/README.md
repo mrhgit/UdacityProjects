@@ -148,7 +148,7 @@ If the equations that connect:
 ... can be represented by linear equations, then you can use a basic Kalman filter.
 
 The basic steps behind the Kalman filter are:
-* you've got an estimate of your state (say, position and velocity of an object moving in 1D) and uncertainy matrix
+* given the most recent estimate of your state and uncertainy matrix or an estimate of your state, if starting out
 * you update your state, given some change in time.  you also update your uncertainty matrix due to process noise
 * you make some measurement
 * you create an error term by finding the difference between your measurement and a conversion of the predicted state space to measurement space
@@ -159,6 +159,8 @@ The basic steps behind the Kalman filter are:
 The basic Kalman filter achieves all of this iff you're dealing with linear systems.
 
 #### Extended Kalman Filter
+
+When dealing with non-linear systems, the Extended Kalman filter is a method for achieving the same state estimation.  In this case, the state update procedure is simply the non-linear system, but the matrices that are used to project from state space to measurement space or to update the process covariance matrix in state space are based on 1st-order Taylor series expansions of the system.  In this way, they are basically converted to linear systems.
 
 #### Unscented Kalman Filter
 
