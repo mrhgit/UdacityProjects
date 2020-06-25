@@ -244,3 +244,5 @@ In this project, the following nodes were used:
 * waypoint updater - publishes desired waypoints for the car to follow, based on traffic lights and the known waypoints
 * twist controller - converts desired linear and angular velocities to throttle, brake and steer values
 * waypoint follower - a provided library that converts throttle, brake and steering into car control in the simulator
+
+Unfortunately, I'm unable to acquire a screenshot, because the VM used for this project is password protected and I can't unlock it.
