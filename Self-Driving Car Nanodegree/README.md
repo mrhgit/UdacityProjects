@@ -172,8 +172,6 @@ The number of sigma points depends on the number of dimensions of state.  n(sigm
 
 #### Particle Filters
 
-#### Predicting Mean and Covariance
-
 ### [Extended Kalman Filter](./)
 ### [Unscented Kalman Filter](./)
 ### [Model Predictive Control](./)
