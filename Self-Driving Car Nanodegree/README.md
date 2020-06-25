@@ -209,6 +209,15 @@ The kidnapped vehicle project performs Sparse Localization by employing particle
 ![Kidnapped Vehicle Image](./Kidnapped-Vehicle/kidnapped_vehicle.png)
 
 ## Term 3
-### [Path Planning](./)
+### [Path Planning](./Path-Planning)
+
+[Report](./Path-Planning/report.pdf)
+
+The Path Planning project involves maneuvering a vehicle around a track while interacting with other vehicles on the road.  The point is to not get stuck behind slow-moving traffic.  The positions and velocities of nearby vehicles is known, as well as waypoints of the track.  Steering and acceleration control are not controlled directly, but indirectly through a series of waypoints that are generated.  Spacing between the waypoints determines speed.
+
+Although using an A* algorithm would have been optimal, I thought it would be more fun to experiment with a custom decision making process.  The truly fun part was mimicking certain local drivers styles (e.g. tailgating and changing lanes too close to other vehicles) by changing the parameters.
+
+![Changing Lanes](./Path-Planning/changing_lanes.png)
+
 ### [Semantic Segmentation](./)
 ### [Capstone](./)
