@@ -184,7 +184,10 @@ In this project, a car is driving around on a track in a figure-8 pattern.  Meas
 
 ### [Unscented Kalman Filter](./Unscented-Kalman-Filter)
 
-In this project, the goal is the same as the EKF project above, but the UKF equations are used.
+In this project, the goal is the same as the EKF project above, but the UKF equations are used.  The performance is markedly better, with much lower RMSE values.  This is a demonstration of the value of avoiding rough estimations.
+
+![UKF Results](./Unscented-Kalman-Filter/ukf_simulation.png)
+
 
 ### [Model Predictive Control](./)
 ### [PID Controller](./)
