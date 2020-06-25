@@ -7,3 +7,10 @@ The Flying Car Nanodegree offered by Udacity in 2018 was a whimsical pursuit to 
 ## Projects
 Below is the list of projects from the course, along with links to my solutions.  In each directory, you'll find a README.md written by Udacity, along with some of their helper code.  Generally, the student's view of the project is the Jupyter Notebook files with an .ipynb extension (viewable in GitHub), which is where you'll find the string of guidance, activities, and Q&A that make up the project.  Sometimes, I had to fill in TODO sections in a separate code file.
 
+#### [Backyard Flyer Project](./Backyard-Flyer)
+
+This project was an introductory project in controlling the drone.  The concept was to use a Finite State Machine to handle the logic of progressing through a series of steps necessary to complete a planned flight.  Things like take-off, altitude check and progressing through a series of waypoints were steps that had to be managed.
+
+![Backyard-Flyer](./Backyard-Flyer/backyard_flyer.png)
+
+
