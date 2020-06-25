@@ -188,9 +188,16 @@ In this project, the goal is the same as the EKF project above, but the UKF equa
 
 ![UKF Results](./Unscented-Kalman-Filter/ukf_simulation.png)
 
+### [Model Predictive Control](./Model-Predictive-Control)
 
-### [Model Predictive Control](./)
+[Report](./Model-Predictive-Control/report.pdf)
+
+Once the state of the vehicle is known, it becomes necessary to control the vehicle to get it to go where you want it to.  In this project, waypoints are provided that define a path along the roadway.  A set of waypoints defining the stretch of road ahead of the vehicle is used to derive a 3rd-order polynomial that represents a course of action.  Basically, it's a way to smoothly interpolate between the waypoints.  This interpolation is necessary, because various points along that curve will be used to measure predicted error between the motion of the car given its current acceleration and steering (along with some equations modeling those factors to the motion of the car).  Given various contraints, such as a desired constant velocity, the optimization library helps minimize the predicted deviation of the car from the desired path.
+
 ### [PID Controller](./)
+
+
+
 ### [Kidnapped Vehicle Project](./)
 
 ## Term 3
