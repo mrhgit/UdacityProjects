@@ -121,7 +121,7 @@ The project starts off by training an SVM classifier on the Histogram of Oriente
 The next two projects (Extended Kalman Filter, EKF and Unscented Kalman Filter, UKF) each deal with Kalman filters (obviously).  There were no reports and README.md's or Jupyter notebooks for those projects, just some C++ code.  As such, I'm including some general notes on Kalman filters here to convey some of the theory behind the projects.
 
 #### Kalman Filter - the General Idea
-The general idea behind the Kalman filter is a recognition of noisy measurements and noisy processes - more specifically, it's the combination of multiple, noisy measurements to improve the overall measurement accuracy.
+The general idea behind the Kalman filter is a recognition of noisy measurements and noisy processes - more specifically, it's the combination of multiple, noisy measurements to improve the overall measurement accuracy.  The underlying thought is:  all your measurements and predictions that are based on measurements are distributions that reflect uncertainty, not points of perfect knowledge.
 
 When we are adding two noisy values, we get the following equations:
 
