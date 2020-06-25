@@ -174,11 +174,16 @@ The number of sigma points depends on the number of dimensions of state.  n(sigm
 
 Particle filters can be used as a brute force style method of determining state.  The basic idea is you place a large number of particles in the state space.  As you make measurements, you see which ones match the best, eliminating the worst matches as you go.  Just like Kalman filters, the theory behind Particle Filters is Bayesian.
 
-### [Extended Kalman Filter](./)
+### [Extended Kalman Filter](./Extended-Kalman-Filter)
 
-In this project, a car is driving around on a track in a figure-8 pattern.  Measurements are made using two devices at differing intervals.  The first device is a laser that measures range to a point of interest quite accurately.  The second device is a RADAR that measure three things simultaenously:  the range (using time of arrival), radial velocity (using the Doppler effect) and bearing (based on antenna position) to a point of interest.
+In this project, a car is driving around on a track in a figure-8 pattern.  Measurements are made using two devices at differing intervals.  The first device is a laser that measures range to a point of interest quite accurately.  The second device is a RADAR that measure three things simultaenously:  the range (using time of arrival), radial velocity (using the Doppler effect) and bearing (based on antenna position) to a point of interest.  The red dots in the image are the laser measurements and the blue dots are the radar measurements.  Even though the laser measurements are better than the radar measurements, by combining the two together, we get an even better estimate of the car's true position (the radial velocity and bearing are also used).
 
-### [Unscented Kalman Filter](./)
+
+
+### [Unscented Kalman Filter](./Unscented-Kalman-Filter)
+
+In this project, the goal is the same as the EKF project above, but the UKF equations are used.
+
 ### [Model Predictive Control](./)
 ### [PID Controller](./)
 ### [Kidnapped Vehicle Project](./)
