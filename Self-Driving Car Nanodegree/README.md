@@ -196,13 +196,16 @@ Once the state of the vehicle is known, it becomes necessary to control the vehi
 
 ### [PID Controller](./PID-Controller)
 
-[Report](./PID-Controller
+[Report](./PID-Controller/report.pdf)
 
 PID controllers are widely used in control systems.  PID stands for Proportional-Integrative-Derivative, because it uses all three types of errors to smoothly correct and control something a desired state.  The PID controller projects were a major part of the Flying Car Nanodegree in order to control drones.  Here they are introduced to keep a vehicle in the center of the lane.  Similarly to the previous project, a series of waypoints are provided that must be followed.  It was noticed that there was jerkiness in the PID controller, but that it was due to the data provided being composed of line segments with extra waypoints linear interpolated, which caused abrupt angle changes.
 
 
+### [Kidnapped Vehicle Project](./Kidnapped-Vehicle)
 
-### [Kidnapped Vehicle Project](./)
+The kidnapped vehicle project performs Sparse Localization by employing particle filteres to allow a vehicle to find out where it is based on a rough GPS estimate and distances to local landmarks in view.  The algorithm pretends each paricle could be the vehicle itself and treats them all as such and then ranks them based on the their likelihood of being correct.
+
+![Kidnapped Vehicle Image](./Kidnapped-Vehicle/kidnapped_vehicle.png)
 
 ## Term 3
 ### [Path Planning](./)
