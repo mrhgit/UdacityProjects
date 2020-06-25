@@ -194,7 +194,11 @@ In this project, the goal is the same as the EKF project above, but the UKF equa
 
 Once the state of the vehicle is known, it becomes necessary to control the vehicle to get it to go where you want it to.  In this project, waypoints are provided that define a path along the roadway.  A set of waypoints defining the stretch of road ahead of the vehicle is used to derive a 3rd-order polynomial that represents a course of action.  Basically, it's a way to smoothly interpolate between the waypoints.  This interpolation is necessary, because various points along that curve will be used to measure predicted error between the motion of the car given its current acceleration and steering (along with some equations modeling those factors to the motion of the car).  Given various contraints, such as a desired constant velocity, the optimization library helps minimize the predicted deviation of the car from the desired path.
 
-### [PID Controller](./)
+### [PID Controller](./PID-Controller)
+
+[Report](./PID-Controller
+
+PID controllers are widely used in control systems.  PID stands for Proportional-Integrative-Derivative, because it uses all three types of errors to smoothly correct and control something a desired state.  The PID controller projects were a major part of the Flying Car Nanodegree in order to control drones.  Here they are introduced to keep a vehicle in the center of the lane.  Similarly to the previous project, a series of waypoints are provided that must be followed.  It was noticed that there was jerkiness in the PID controller, but that it was due to the data provided being composed of line segments with extra waypoints linear interpolated, which caused abrupt angle changes.
 
 
 
