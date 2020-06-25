@@ -118,10 +118,10 @@ The project starts off by training an SVM classifier on the Histogram of Oriente
 ## Term 2
 
 ### Some Kalman Filter Notes
-The next two projects (Extended Kalman Filter, EKF and Unscented Kalman Filter, UKF) each deal with Kalman filters (obviously).  There were no reports and README.md's or Jupyter notebooks for those projects, just some C++ code.  As such, I'm including some general notes on Kalman filters here to convey some of the theory behind the projects.
+The next two projects (Extended Kalman Filter, EKF and Unscented Kalman Filter, UKF) each deal with Kalman filters (obviously).  There were no reports and README.md's or Jupyter notebooks for those projects, just some C++ code.  As such, I'm including some general notes on Kalman filters here to convey some of the theory behind the projects.  I won't try to compete with Wikipedia's entry (https://en.wikipedia.org/wiki/Kalman_filter), but should mention a few concepts to introduce the projects.
 
-#### Kalman Filter - the General Idea
-The general idea behind the Kalman filter is a recognition of noisy measurements and noisy processes - more specifically, it's the combination of multiple, noisy measurements to improve the overall measurement accuracy.  The underlying thought is:  all your measurements and predictions that are based on measurements are distributions that reflect uncertainty, not points of perfect knowledge.
+#### Noisy Measurements - one of the general ideas behind Kalman filters
+The general idea behind the Kalman filter is a recognition of noisy measurements and noisy processes - more specifically, it's the combination of multiple, noisy measurements to improve the overall measurement accuracy.  The underlying thought is:  all your measurements and predictions that are based on measurements are distributions that reflect uncertainty, not points of perfect knowledge.  An assumption made is that noises are independent and Gaussian.
 
 When we are adding two noisy values, we get the following equations:
 
@@ -133,6 +133,30 @@ When we have two direct, noisy measurements of the same value, we can combine th
 
 ![combining_two_noisy_values](./Kalman-Filters/combining_two_noisy_values.png)
 
+Now we can see that the new mean is a weighted average of the previous means, using their corresponding variances as weights.  The new variance inverse of the sum of the inverses of the previous variances (I'm not sure what this type of formula is called, but I might refer to as the "parallel net value").  This new variance will *always* be smaller than either of the two variances used to determine it.  In cases where the two original variances are equal, the resulting variance will be half of the previous two.
+
+So what should be done in cases where:
+* what you want to measure is changing systematically
+* you can't measure what you want to know directly, but you can model the connection between the two
+* there are inputs (aka controls) to the system - such as a steering wheel or gas pedal
+
+#### Basic Kalman Filter
+
+If the equations that connect:
+* the state of the system to the measured values
+* the state of the system to the inputs
+... can be represented by linear equations, then you can use a basic Kalman filter.
+
+The basic steps behind the Kalman filter are:
+* you've got an estimate of your state (say, position and velocity of an object moving in 1D) and uncertainy matrix
+* you update your state, given some change in time.  you also update your uncertainty matrix due to process noise
+* you make some measurement
+* you create an error term by finding the difference between your measurement and a conversion of the predicted state space to measurement space
+* you find a gain matrix, the Kalman gain, by projecting your uncertainy matrix into the measurement space and adding in your measurement noise
+* you use the Kalman gain as a multiplier when updating your state estimate with the error term
+* you also use the Kalman gain to update your uncertainy matrix so it reflects your introduced measurement noise combined with how "off" your state estimate is already
+
+The basic Kalman filter achieves all of this iff you're dealing with linear systems.
 
 #### Extended Kalman Filter
 
