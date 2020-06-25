@@ -227,4 +227,14 @@ In the Semantic Segmentation project, it's back to Neural Networks - specificall
 
 ![Semantic Segmentation](./Semantic-Segmentation/semantic_segmentation.png)
 
-### [Capstone](./)
+### [Capstone](./Capstone)
+
+The Capstone project centered around the use of the Robotic Operating System (ROS).  The ROS system allows for work to be divided very neatly, as it is basically an architecture that handles communication between modules.  Things like cameras can be running and supply images and other modules can subscribe and draw images from available ones as they like, for instance.  Reusability is as much a major part of ROS as modularization.  The point is to isolate functionality such that it can be shared (and borrowed) freely and easily.  This allows for extremely rapid development due to easing the burden of system integration.  This means that standardization is also key.
+
+The tasks of a self-driving car that are combined in this project are:
+* Sensors - lidar, radar, gps, cameras
+* Perception - combines sensor information into meaningful info
+* Planning - uses perception info for behavior planning as well as short and long range path planning
+* Control - ensures vehicle follows the path
+
+ROS nodes typically have a preamble, main loop and a shutdown procedure.
