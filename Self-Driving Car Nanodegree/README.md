@@ -172,7 +172,12 @@ The number of sigma points depends on the number of dimensions of state.  n(sigm
 
 #### Particle Filters
 
+Particle filters can be used as a brute force style method of determining state.  The basic idea is you place a large number of particles in the state space.  As you make measurements, you see which ones match the best, eliminating the worst matches as you go.  Just like Kalman filters, the theory behind Particle Filters is Bayesian.
+
 ### [Extended Kalman Filter](./)
+
+In this project, a car is driving around on a track in a figure-8 pattern.  Measurements are made using two devices at differing intervals.  The first device is a laser that measures range to a point of interest quite accurately.  The second device is a RADAR that measure three things simultaenously:  the range (using time of arrival), radial velocity (using the Doppler effect) and bearing (based on antenna position) to a point of interest.
+
 ### [Unscented Kalman Filter](./)
 ### [Model Predictive Control](./)
 ### [PID Controller](./)
