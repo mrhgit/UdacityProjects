@@ -200,7 +200,7 @@ Once the state of the vehicle is known, it becomes necessary to control the vehi
 
 PID controllers are widely used in control systems.  PID stands for Proportional-Integrative-Derivative, because it uses all three types of errors to smoothly correct and control something a desired state.  The PID controller projects were a major part of the Flying Car Nanodegree in order to control drones.  Here they are introduced to keep a vehicle in the center of the lane.  Similarly to the previous project, a series of waypoints are provided that must be followed.  It was noticed that there was jerkiness in the PID controller, but that it was due to the data provided being composed of line segments with extra waypoints linear interpolated, which caused abrupt angle changes.
 
-![PID Controller](./PID-Controller/pid_controller.png]
+![PID Controller](./PID-Controller/pid_controller.png)
 
 ### [Kidnapped Vehicle Project](./Kidnapped-Vehicle)
 
