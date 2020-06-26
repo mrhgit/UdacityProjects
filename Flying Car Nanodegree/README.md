@@ -22,6 +22,8 @@ Here's a photo of the drone zooming off to the next waypoint.  I definitely tune
 
 In this project, AI, graph-based solutions are used to find a path for the drone through a skyscraper-rich cityscape.  A 3-D map of the city is provided by defining building locations and dimensions.  The drone is given a starting point and destination point with a task of finding the best path.  This is similar to the planning algorithm projects in the Artificial Intelligence Nanodegree.  While it's possible to consider every single possible point as a node in the graph, a stochastic method is used for efficiency.  Basically, a smattering of points are randomly added to open areas of the map and two node are added for the start and destination points.  An A* algorithm is run with that limited set of nodes.  One more step is performed, which is the elimination of points which are unnecessary intermediates - i.e. if I have to travel from A->B->C->D, but I can go directly from A->D without running into anything, then I should simply skip points B and C.
 
+![Motion Planning](./Motion-Planning/motion_planning_1.png)
+
 #### [Drone Controller](./Drone-Controller)
 
 [Report](./Drone-Controller/report.pdf)
