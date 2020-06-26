@@ -8,11 +8,13 @@ The Self-Driving Car Nanodegree offered by Udacity in 2017/2018 was one of their
 Below is the list of projects from the course, along with links to my solutions.  In each directory, you'll find a README.md written by Udacity, along with some of their helper code.  Generally, the student's view of the project is the Jupyter Notebook files with an .ipynb extension (viewable in GitHub), which is where you'll find the string of guidance, activities, and Q&A that make up the project.  Sometimes, I had to fill in TODO sections in a separate code file.
 
 ## Term 1
+
 ### [Lab: LeNet](./LeNet-Lab)
 [Jupyter Notebook](./LeNet-Lab/LeNet-Lab-Solution.ipynb)
 
 As I stated, topics are reintroduced in various nanodegrees.  In the Artificial Intelligence Nanodegree, Keras was used when dealing with neural networks, however "raw" TensorFlow is used in the Self-Driving Car Nanodegree.  This project introduces the LeNet architecture - one of the first forays of Neural Networks that shocked the world.  This neural network designed by Yan LeCun is famous for excelling at the MNIST challenge, outperforming all other solutions by a wide margin.  In this project, the LeNet-5 architecture is built.
 ![LeNet-5 Architecture](LeNet-Lab/lenet.png)
+<hr>
 
 ### [Lab: AlexNet Feature Extraction](./AlexNet-Feature-Extraction)
 [Feature Extraction Python Script](./AlexNet-Feature-Extraction/feature_extraction_solution.py)
@@ -25,6 +27,8 @@ As I stated, topics are reintroduced in various nanodegrees.  In the Artificial 
 This lab appears to be missing both an extensive Readme.md and any sort of Jupyter Notebook, so I've linked to the python solutions involved instead.  The job here is similar to the dog classifier project in the AIND - use a trained model that's been proven to do a similar task, take the first half of the network (including weights) and tack on new, appropriate layers, and retrain it to classify a different set of classes.  The first few layers may be frozen so that they don't change - this also speeds up the training.  In this example, we'll be taking [AlexNet](https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html), which is meant to work with the [ImageNet](https://qz.com/1034972/the-data-that-changed-the-direction-of-ai-research-and-possibly-the-world/) dataset, and using it to classify traffic signs.
 
 A similar lab was done using the Inception, ResNet and VGG networks.
+
+<hr>
 
 ### [Traffic Sign Classifier](./Traffic-Sign-Classifier)
 
@@ -53,6 +57,8 @@ Topics:
     * Layer skipping
     * Feature Map Visualization
 
+<hr>
+
 ### [Behavioral Cloning](./Behavioral-Cloning)
 [Jupyter Notebook](./Behavioral-Cloning/Behavioral_Cloning_Final.ipynb)
 
@@ -74,6 +80,8 @@ Topics:
 * Neural Network Design
    * Dropout Layers
 
+<hr>
+
 ### [Lane Lines](./Lane-Lines)
 
 [Jupyter Notebook](./Lane-Lines/P1.ipynb)
@@ -89,6 +97,8 @@ Topics:
 
 This project using OpenCV operations to detect lane lines in images.  As mentioned in the [report](./Lane-Lines/report.pdf), the first step is Canny Edge Detection, which is followed by probabilistic Hough transform.  A region of interest is also enforced, which helps avoid detecting edges in traffic signs and the like.  At this point, equations for the lines are derived and lines are overlayed on to the original image as a feedback mechanism.
 
+<hr>
+
 ### [Advanced Lane Lines](./Advanced-Lane-Lines)
 
 [Jupyter Notebook](./Advanced-Lane-Lines/Advanced_Lane_Finding_Final.ipynb)
@@ -103,6 +113,8 @@ This project using OpenCV operations to detect lane lines in images.  As mention
 
 This lane finder project incorporates camera lens distortion correction, colorspace conversion and thresholding, (coolest of all) perspective transformation, curvature calculation, overlaying lines and finally perspective transformation reversal.  Important takeaways are that thresholding can be extremely temperamental and so can curvature parameters made in an expanded space where errors may be magnified.  In the report, I indicate that the challenge video was a failure, but looking at it now I see that the performance is pretty good (although not perfect).
 
+<hr>
+
 ### [Vehicle Detection](./Vehicle-Detection)
 
 [Jupyter Notebook](./Vehicle-Detection/Vehicle_Detection_v1.ipynb)
@@ -115,10 +127,13 @@ This lane finder project incorporates camera lens distortion correction, colorsp
 
 The project starts off by training an SVM classifier on the Histogram of Oriented Gradients (HOG) features calculated from a dataset of images of rear views of cars and not-cars.  This means we now have something that, given a 64x64 image, can fairly quickly/cheaply tell us whether or not a car is in the image.  In order to leverage this classifiers, windows of various sizes are slid around the car camera image.  The windowed sample is converted to 64x64 and a car detection is performed.  Because the results can be noisy, heatmapping is used to overlay multiple, consistent detections, and a threshold is used to trigger an "overall" detection.  The report has some good discussion about the tradeoffs involved and possible improvements.
 
+<hr>
+
 ## Term 2
 
 ### Some Kalman Filter Notes
 The next two projects (Extended Kalman Filter, EKF and Unscented Kalman Filter, UKF) each deal with Kalman filters (obviously).  There were no reports and README.md's or Jupyter notebooks for those projects, just some C++ code.  As such, I'm including some general notes on Kalman filters here to convey some of the theory behind the projects.  I won't try to compete with Wikipedia's entry (https://en.wikipedia.org/wiki/Kalman_filter), but should mention a few concepts to introduce the projects.
+<hr>
 
 #### Noisy Measurements - one of the general ideas behind Kalman filters
 The general idea behind the Kalman filter is a recognition of noisy measurements and noisy processes - more specifically, it's the combination of multiple, noisy measurements to improve the overall measurement accuracy.  The underlying thought is:  all your measurements and predictions that are based on measurements are distributions that reflect uncertainty, not points of perfect knowledge.  An assumption made is that noises are independent and Gaussian.
@@ -174,6 +189,8 @@ The number of sigma points depends on the number of dimensions of state.  n(sigm
 
 Particle filters can be used as a brute force style method of determining state.  The basic idea is you place a large number of particles in the state space.  As you make measurements, you see which ones match the best, eliminating the worst matches as you go.  Just like Kalman filters, the theory behind Particle Filters is Bayesian.
 
+<hr>
+
 ### [Extended Kalman Filter](./Extended-Kalman-Filter)
 
 The [Eigen](https://eigen.tuxfamily.org/dox/GettingStarted.html) library was used for matrix operations.
@@ -182,17 +199,23 @@ In this project, a car is driving around on a track in a figure-8 pattern.  Meas
 
 ![EKF Results](./Extended-Kalman-Filter/ekf_simulation.png)
 
+<hr>
+
 ### [Unscented Kalman Filter](./Unscented-Kalman-Filter)
 
 In this project, the goal is the same as the EKF project above, but the UKF equations are used.  The performance is markedly better, with much lower RMSE values.  This is a demonstration of the value of avoiding rough estimations.
 
 ![UKF Results](./Unscented-Kalman-Filter/ukf_simulation.png)
 
+<hr>
+
 ### [Model Predictive Control](./Model-Predictive-Control)
 
 [Report](./Model-Predictive-Control/report.pdf)
 
 Once the state of the vehicle is known, it becomes necessary to control the vehicle to get it to go where you want it to.  In this project, waypoints are provided that define a path along the roadway.  A set of waypoints defining the stretch of road ahead of the vehicle is used to derive a 3rd-order polynomial that represents a course of action.  Basically, it's a way to smoothly interpolate between the waypoints.  This interpolation is necessary, because various points along that curve will be used to measure predicted error between the motion of the car given its current acceleration and steering (along with some equations modeling those factors to the motion of the car).  Given various contraints, such as a desired constant velocity, the optimization library helps minimize the predicted deviation of the car from the desired path.
+
+<hr>
 
 ### [PID Controller](./PID-Controller)
 
@@ -202,11 +225,15 @@ PID controllers are widely used in control systems.  PID stands for Proportional
 
 ![PID Controller](./PID-Controller/pid_controller.png)
 
+<hr>
+
 ### [Kidnapped Vehicle Project](./Kidnapped-Vehicle)
 
 The kidnapped vehicle project performs Sparse Localization by employing particle filteres to allow a vehicle to find out where it is based on a rough GPS estimate and distances to local landmarks in view.  The algorithm pretends each paricle could be the vehicle itself and treats them all as such and then ranks them based on the their likelihood of being correct.
 
 ![Kidnapped Vehicle Image](./Kidnapped-Vehicle/kidnapped_vehicle.png)
+
+<hr>
 
 ## Term 3
 ### [Path Planning](./Path-Planning)
@@ -219,6 +246,8 @@ Although not optimal (as mentioned in the report), I thought it would be more fu
 
 ![Changing Lanes](./Path-Planning/changing_lanes.png)
 
+<hr>
+
 ### [Semantic Segmentation](./Semantic-Segmentation)
 
 [Report](./Semantic-Segmentation/report.pdf)
@@ -226,6 +255,8 @@ Although not optimal (as mentioned in the report), I thought it would be more fu
 In the Semantic Segmentation project, it's back to Neural Networks - specifically, the U-Net architecture, which is also known as a Fully Convolutional Network (FCN).  A network that is fully convolutional can run at a very high speed on GPU hardware.  The VGG network was taken as a base model and chopped off after the convolutional layers.  Additional layers were added back on to build back up to a layer size that matched the image input size so that the classification of each pixel as road/not-road could be overlayed onto it.  Skip layers are especially useful in U-Nets because of the network's need to redraw an image of the original size.  The main layers that form the U-Net perform an encoding/decoding process that plays on the strength of the neural network's ability to make considider many features in an image (and groups of features, and groups of groups of features, etc.).  The amount of data used for training was pretty small (289 images), so much of the output is a little messy.
 
 ![Semantic Segmentation](./Semantic-Segmentation/semantic_segmentation.png)
+
+<hr>
 
 ### [Capstone](./Capstone)
 
