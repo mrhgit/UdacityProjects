@@ -8,7 +8,7 @@ The Flying Car Nanodegree offered by Udacity in 2018 was a whimsical pursuit to 
 Below is the list of projects from the course, along with links to my solutions.  In each directory, you'll find a README.md written by Udacity, along with some of their helper code.  Generally, the student's view of the project is the Jupyter Notebook files with an .ipynb extension (viewable in GitHub), which is where you'll find the string of guidance, activities, and Q&A that make up the project.  Sometimes, I had to fill in TODO sections in a separate code file.
 <hr>
 
-#### [Backyard Flyer Project](./Backyard-Flyer)
+### [Backyard Flyer Project](./Backyard-Flyer)
 
 This project was an introductory project in controlling the drone.  The concept was to use a Finite State Machine to handle the logic of progressing through a series of steps necessary to complete a planned flight.  Things like take-off, altitude check and progressing through a series of waypoints were steps that had to be managed.
 
@@ -18,7 +18,7 @@ Here's a photo of the drone zooming off to the next waypoint.  I definitely tune
 
 <hr>
 
-#### [Motion Planning](./Motion-Planning)
+### [Motion Planning](./Motion-Planning)
 
 [Report](./Motion-Planning/report.pdf)
 
@@ -28,7 +28,7 @@ In this project, AI, graph-based solutions are used to find a path for the drone
 
 <hr>
 
-#### [Drone Controller](./Drone-Controller)
+### [Drone Controller](./Drone-Controller)
 
 [Report](./Drone-Controller/report.pdf)
 
@@ -38,7 +38,7 @@ As can be seen in the report, this project was very formula-heavy, which was act
 
 <hr>
 
-#### [Orientation-Estimation with Extended Kalman Filters](./Orientation-Estimation)
+### [Orientation-Estimation with Extended Kalman Filters](./Orientation-Estimation)
 
 [Report](./Orientation-Estimation/report.pdf)
 
