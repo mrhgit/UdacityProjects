@@ -42,5 +42,9 @@ As can be seen in the report, this project was very formula-heavy, which was act
 
 [Report](./Orientation-Estimation/report.pdf)
 
+In this project, all the nice, ideal sensors and state knowledge are taken away and replaced with noisy measurements and a DIY approach to determining state.  The first part of the project is a trivial exercise in determining the noise (standard deviation) of the GPS and accelerometer measurements coming in.  For the noisy measurements and in order to estimate our state, we reintroduce the Extended Kalman Filter (seen before in the Self-Driving Car Nanodegree).  The sensor update intervals are meant to be realistic, with the IMU, magnetometer and GPS updating at differing rates.  Many equations are provided in the [report](./Orientation-Estimation/report.pdf), including rotation matrices, measurement-space-to-state-space conversions, and the EKF functions.
+
+Once the sensors can viably be used with the EKF to substitute for what used to be ideal information, a task was given to follow a trajectory using that information instead.  The graphs below show the consequences of ideal vs noisy/estimated.  Quite a difference!  As the report indicates, perhaps a bit more tuning is needed before this one's ready for the sky!
+
 ![Ideal Estimators and Sensors](./Orientation-Estimation/ideal_estimator_sensors.png)
 ![EKF Estimators and Noisy Sensors](./Orientation-Estimation/noisy_estimator_sensors.png)
