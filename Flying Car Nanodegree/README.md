@@ -42,5 +42,5 @@ As can be seen in the report, this project was very formula-heavy, which was act
 
 [Report](./Orientation-Estimation/report.pdf)
 
-![Ideal Estimators and Sensors](./Orientation-Estimation/ideal_estimators_sensors.png)
-![EKF Estimators and Noisy Sensors](./Orientation-Estimation/noisy_estimators_sensors.png)
+![Ideal Estimators and Sensors](./Orientation-Estimation/ideal_estimator_sensors.png)
+![EKF Estimators and Noisy Sensors](./Orientation-Estimation/noisy_estimator_sensors.png)
