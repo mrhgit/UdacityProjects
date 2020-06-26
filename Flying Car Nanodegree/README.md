@@ -26,7 +26,9 @@ In this project, AI, graph-based solutions are used to find a path for the drone
 
 [Report](./Drone-Controller/report.pdf)
 
-As can be seen in the report, this project was very formula-heavy, which was actually quite satisfying to work with.  It's really neat to see the mathematical models of physics come to life.
+As can be seen in the report, this project was very formula-heavy, which was actually quite satisfying to work with.  It's really neat to see the mathematical models of physics come to life.  The concept is that there are only four motors (propellers, really) that can be turned which are meant to control all aspects of the drone.  The consequential equations are listed neatly in the [report](./Drone-Controller/report.pdf).  PID controllers are used to keep the performance working under non-ideal circumstances, such as a lopsided drone, motors with different torque, etc.  The nicest thing about the project was of course the simulator which saved tons of time and hassle, but another nice thing was that we were forced to use real physics units (meters, Newtons, etc.), which offers a feeling of accomplishment that you could make something nearly real.
+
+![Drone Controller](./Drone-Controller/drone_controller.png)
 
 #### [Orientation-Estimation with Extended Kalman Filters](./Orientation-Estimation)
 
