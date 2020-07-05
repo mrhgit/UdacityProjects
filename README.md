@@ -2,13 +2,7 @@
 An overview of my experience with Udacity
 
 Table of Contents
-* Machine Learning Nanodegree (Spring, 2017)
-    * Student Intervention
-    * Titanic Survivor Prediction
-    * Boston Housing
-    * Finding Donors
-    * SmartCab
-    * Customer Segments
-    * Digit Recognition
-
-    
+* [Machine Learning Nanodegree](./Machine Learning Nanodegree) (Spring, 2017)
+* Artifical Intelligence Nanodegree (Summer, 2017)
+* Self-Driving Car Nanodegree (Fall, 2017)
+* Flying Car Nanodegree (Spring, 2018)
