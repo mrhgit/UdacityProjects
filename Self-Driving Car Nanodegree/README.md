@@ -148,7 +148,7 @@ When we have two direct, noisy measurements of the same value, we can combine th
 
 ![combining_two_noisy_values](./Kalman-Filters/combining_two_noisy_values.png)
 
-Now we can see that the new mean is a weighted average of the previous means, using their corresponding variances as weights.  The new variance inverse of the sum of the inverses of the previous variances (I'm not sure what this type of formula is called, but I might refer to as the "parallel net value").  This new variance will *always* be smaller than either of the two variances used to determine it.  In cases where the two original variances are equal, the resulting variance will be half of the previous two.
+Now we can see that the new mean is a weighted average of the previous means, using their corresponding variances as weights.  The new variance is the inverse of the sum of the inverses of the previous variances (this is akin to the Harmonic Mean equation).  This new variance will *always* be smaller than either of the two variances used to determine it.  In cases where the two original variances are equal, the resulting variance will be half of the previous two.
 
 So what should be done in cases where:
 * what you want to measure is changing systematically
